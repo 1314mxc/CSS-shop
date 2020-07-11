@@ -96,7 +96,7 @@ a[href]{
 ### [attr=xxx]，用来选择有 attr 属性且属性值等于 xxx 的元素，如选择所有文本类型的输入框，可以用 input [type=text]。
 ```
 <!-- HTML： -->
-<input type="text" value="大花碗里扣个大花活蛤蟆"/>
+<input type="text" value="GitHub上有个云小梦"/>
 
 // CSS：
 input[type=text]{
@@ -107,7 +107,7 @@ input[type=text]{
 这个选择器里面要注意，xxx 和 HTML 中的属性值必须完全相等才会生效。
 ```
 <!-- HTML： -->
-<input class="input text" type="text" value="大花碗里扣个大花活蛤蟆"/>
+<input class="input text" type="text" value="GitHub上有个云小梦"/>
 ```
 ```
 // CSS：
@@ -117,7 +117,7 @@ input[class=input]{
 ```
 
 上面例子中 input [class=input] 的选择器并不能选中 class=“input text” 的元素，如果非要用这种选择器，必须使用 input [class=“input text”] 才可以。
-### [attr~=xxx]，这个选择器中间用了～=，选择属性值中包含 xxx 的元素，但一定是逗号分隔的多个值中有一个能和 xxx 相等才行。
+### [attr~=xxx]，这个选择器中间用了～=，选择属性值中包含 xxx 的元素，但一定是空格分隔的多个值中有一个能和 xxx 相等才行。
 ```
 <!-- HTML： -->
 <input class="input text" type="text" value="大花碗里扣个大花活蛤蟆"/>
